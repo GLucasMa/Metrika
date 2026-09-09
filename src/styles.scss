@@ -1,0 +1,257 @@
+/* =========================================================================
+   METRIKA — Estilos globales
+   Estilo: Warm Industrial
+   ========================================================================= */
+
+/* -------------------------------------------------------------------------
+   TIPOGRAFÍA
+   La marca usa "HANSON.METHOD". Todavía no tenemos el archivo de la fuente:
+   cuando el usuario lo entregue, copiarlo a src/assets/fonts/ (ver el
+   README.md de esa carpeta) y esta declaración @font-face lo va a levantar
+   automáticamente — no hay que tocar nada más en el resto del proyecto,
+   porque todos los títulos usan la variable --font-display.
+
+   Mientras tanto, --font-display cae a 'Oswald' (importada en index.html)
+   como reemplazo visual de estilo condensado/industrial.
+   ------------------------------------------------------------------------- */
+@font-face {
+  font-family: 'Hanson Method';
+  src:
+    url('/assets/fonts/hanson-method.woff2') format('woff2'),
+    url('/assets/fonts/hanson-method.woff') format('woff'),
+    url('/assets/fonts/hanson-method.otf') format('opentype');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* --- Paleta de marca (definida por el cliente) --- */
+  --color-cream: #f8f0ee;
+  --color-red: #b62924;
+
+  /* --- Paleta complementaria (elegida para dar contraste tipo
+     "industrial cálido": metal oscuro + madera). Se puede ajustar
+     junto con el cliente sin tocar el resto de los estilos. --- */
+  --color-charcoal: #2b2420;
+  --color-charcoal-soft: #4a3f38;
+  --color-cream-dark: #efe2dc;
+  --color-red-dark: #8f1f1b;
+  --color-line: rgba(43, 36, 32, 0.14);
+
+  /* --- Tipografía --- */
+  --font-display: 'Hanson Method', 'Oswald', 'Arial Narrow', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* --- Layout --- */
+  --container-width: 1180px;
+  --radius-sm: 2px;
+  --radius-md: 6px;
+  --shadow-soft: 0 8px 24px rgba(43, 36, 32, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin: 0 0 0.5em;
+  color: var(--color-charcoal);
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------
+   Utilidades compartidas por las secciones
+   ------------------------------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 88px 0;
+  border-bottom: 1px solid var(--color-line);
+  scroll-margin-top: 84px;
+}
+
+.section--alt {
+  background: var(--color-cream-dark);
+}
+
+.section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-red);
+  margin-bottom: 14px;
+}
+
+.section-kicker::before {
+  content: '';
+  width: 22px;
+  height: 2px;
+  background: var(--color-red);
+  display: inline-block;
+}
+
+.section-title {
+  font-size: clamp(28px, 4vw, 40px);
+  margin-bottom: 18px;
+}
+
+.section-lead {
+  max-width: 640px;
+  color: var(--color-charcoal-soft);
+  font-size: 17px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 28px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--color-red);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.btn--solid {
+  background: var(--color-red);
+  color: var(--color-cream);
+}
+
+.btn--solid:hover {
+  background: var(--color-red-dark);
+  transform: translateY(-1px);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--color-charcoal);
+  border-color: var(--color-charcoal);
+}
+
+.btn--outline:hover {
+  background: var(--color-charcoal);
+  color: var(--color-cream);
+}
+
+/* Línea "cortada" decorativa, evoca el trazo de un láser */
+.cut-divider {
+  width: 100%;
+  height: 1px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--color-red) 0px,
+    var(--color-red) 10px,
+    transparent 10px,
+    transparent 18px
+  );
+  opacity: 0.6;
+  margin: 0 0 40px;
+}
+
+/* Layout de dos columnas: texto + panel lateral (usado por las secciones
+   de Corte y grabado e Impresión 3D). */
+.split {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.split--reverse {
+  grid-template-columns: 1fr 1.1fr;
+}
+
+.split--reverse .split__text {
+  order: 2;
+}
+
+.split--reverse .split__media {
+  order: 1;
+}
+
+.split__media {
+  height: 420px;
+}
+
+@media (max-width: 900px) {
+  .split,
+  .split--reverse {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .split--reverse .split__text,
+  .split--reverse .split__media {
+    order: initial;
+  }
+
+  .split__media {
+    height: 320px;
+  }
+}
+
+@media (max-width: 720px) {
+  .section {
+    padding: 64px 0;
+  }
+}

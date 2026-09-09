@@ -1,0 +1,35 @@
+<section id="modelado-3d" class="section">
+  <div class="container modelado">
+    <span class="section-kicker">Nuestros servicios</span>
+    <h2 class="section-title">Modelado 3D</h2>
+    <div class="cut-divider"></div>
+
+    <!--
+      Div reservado para el video que enviará el cliente.
+      Reemplazar MODELADO_3D_VIDEO_SRC en src/app/data/site-content.ts por:
+      - la ruta a un archivo propio (ej. 'assets/videos/modelado.mp4'), o
+      - una URL de embed de YouTube/Vimeo (ej. 'https://www.youtube.com/embed/XXXXX').
+    -->
+    <div class="modelado__video">
+      @if (hasVideo && isEmbed) {
+        <iframe
+          [src]="safeEmbedUrl"
+          title="Video de modelado 3D"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      } @else if (hasVideo) {
+        <video [src]="videoSrc" controls preload="metadata"></video>
+      } @else {
+        <div class="modelado__placeholder">
+          <span class="modelado__placeholder-icon">▶</span>
+          <p>Espacio reservado para el video de modelado 3D</p>
+          <p class="modelado__placeholder-hint">(a completar con el material del cliente)</p>
+        </div>
+      }
+    </div>
+
+    <p class="section-lead modelado__text">{{ text }}</p>
+  </div>
+</section>

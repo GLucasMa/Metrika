@@ -1,0 +1,49 @@
+.materiales-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 12px;
+}
+
+.material-card {
+  background: var(--color-cream);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.material-card__image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.material-card__name {
+  font-size: 16px;
+  margin: 16px 16px 6px;
+}
+
+.material-card__desc {
+  font-size: 14px;
+  color: var(--color-charcoal-soft);
+  margin: 0 16px 18px;
+}
+
+.materiales-nota {
+  margin-top: 28px;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--color-charcoal-soft);
+}
+
+@media (max-width: 900px) {
+  .materiales-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .materiales-grid {
+    grid-template-columns: 1fr;
+  }
+}

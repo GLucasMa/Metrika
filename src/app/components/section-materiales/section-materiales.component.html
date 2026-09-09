@@ -1,0 +1,19 @@
+<section id="materiales" class="section section--alt">
+  <div class="container">
+    <span class="section-kicker">Materiales</span>
+    <h2 class="section-title">{{ intro }}</h2>
+    <div class="cut-divider"></div>
+
+    <div class="materiales-grid">
+      @for (material of materiales; track material.name) {
+        <article class="material-card">
+          <img class="material-card__image" [src]="material.image" [alt]="material.name" />
+          <h3 class="material-card__name">{{ material.name }}</h3>
+          <p class="material-card__desc">{{ material.description }}</p>
+        </article>
+      }
+    </div>
+
+    <p class="materiales-nota">{{ nota }}</p>
+  </div>
+</section>

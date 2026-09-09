@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480" role="img" aria-label="Impresión 3D">
+  <rect width="640" height="480" fill="#f8f0ee"/>
+  <line x1="467.0" y1="276.6" x2="269.4" y2="233.6" stroke="rgba(43,36,32,0.14)" stroke-width="2" stroke-dasharray="9 7"/><line x1="77.3" y1="425.3" x2="172.5" y2="457.4" stroke="rgba(43,36,32,0.14)" stroke-width="2" stroke-dasharray="9 7"/><line x1="261.7" y1="145.4" x2="392.1" y2="13.1" stroke="rgba(43,36,32,0.14)" stroke-width="2" stroke-dasharray="9 7"/><line x1="64.2" y1="355.3" x2="222.9" y2="420.7" stroke="rgba(43,36,32,0.14)" stroke-width="2" stroke-dasharray="9 7"/><line x1="211.8" y1="142.5" x2="366.7" y2="117.9" stroke="rgba(43,36,32,0.14)" stroke-width="2" stroke-dasharray="9 7"/><line x1="56.5" y1="70.0" x2="-17.5" y2="75.4" stroke="rgba(43,36,32,0.14)" stroke-width="2" stroke-dasharray="9 7"/>
+  <rect x="0" y="0" width="640" height="480" fill="none" stroke="#b62924" stroke-width="6" opacity="0.9"/>
+  <line x1="40" y1="420" x2="130" y2="420" stroke="#b62924" stroke-width="3"/>
+  <text x="40" y="220" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="2" fill="#2b2420">IMAGEN</text>
+  <text x="40" y="256" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="2" fill="#2b2420">PLACEHOLDER</text>
+  <text x="40" y="300" font-family="Arial, sans-serif" font-size="16" letter-spacing="1" fill="#b62924">IMPRESIÓN 3D</text>
+  <text x="40" y="326" font-family="Arial, sans-serif" font-size="13" fill="rgba(43,36,32,0.6)">Detalle de capas</text>
+</svg>

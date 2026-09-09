@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480" role="img" aria-label="Corte y grabado">
+  <rect width="640" height="480" fill="#2b2420"/>
+  <line x1="160.8" y1="261.8" x2="270.7" y2="228.9" stroke="rgba(248,240,238,0.12)" stroke-width="2" stroke-dasharray="9 7"/><line x1="490.1" y1="60.8" x2="434.2" y2="-136.1" stroke="rgba(248,240,238,0.12)" stroke-width="2" stroke-dasharray="9 7"/><line x1="492.8" y1="249.0" x2="423.1" y2="77.4" stroke="rgba(248,240,238,0.12)" stroke-width="2" stroke-dasharray="9 7"/><line x1="137.3" y1="198.2" x2="47.0" y2="257.3" stroke="rgba(248,240,238,0.12)" stroke-width="2" stroke-dasharray="9 7"/><line x1="8.3" y1="9.2" x2="150.8" y2="8.8" stroke="rgba(248,240,238,0.12)" stroke-width="2" stroke-dasharray="9 7"/><line x1="169.0" y1="458.1" x2="-8.6" y2="514.2" stroke="rgba(248,240,238,0.12)" stroke-width="2" stroke-dasharray="9 7"/>
+  <rect x="0" y="0" width="640" height="480" fill="none" stroke="#b62924" stroke-width="6" opacity="0.9"/>
+  <line x1="40" y1="420" x2="130" y2="420" stroke="#b62924" stroke-width="3"/>
+  <text x="40" y="220" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="2" fill="#f8f0ee">IMAGEN</text>
+  <text x="40" y="256" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="2" fill="#f8f0ee">PLACEHOLDER</text>
+  <text x="40" y="300" font-family="Arial, sans-serif" font-size="16" letter-spacing="1" fill="#b62924">CORTE Y GRABADO</text>
+  <text x="40" y="326" font-family="Arial, sans-serif" font-size="13" fill="rgba(248,240,238,0.6)">Pieza cortada en MDF</text>
+</svg>

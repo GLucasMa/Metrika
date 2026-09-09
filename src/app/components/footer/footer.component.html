@@ -1,0 +1,18 @@
+<footer class="footer">
+  <div class="container footer__bar">
+    <span class="footer__brand">Metrika</span>
+
+    <div class="footer__contact">
+      <a [href]="'tel:' + contactPhone">{{ contactPhone }}</a>
+      <div class="footer__socials">
+        @for (social of socialLinks; track social.label) {
+          <a [href]="social.href" [attr.aria-label]="social.label" target="_blank" rel="noopener">
+            {{ social.label }}
+          </a>
+        }
+      </div>
+    </div>
+
+    <span class="footer__copy">© {{ year }} Metrika · Corte y grabado láser · Impresión 3D</span>
+  </div>
+</footer>

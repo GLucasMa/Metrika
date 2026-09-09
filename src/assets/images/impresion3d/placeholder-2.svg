@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480" role="img" aria-label="Impresión 3D">
+  <rect width="640" height="480" fill="#f8f0ee"/>
+  <line x1="441.5" y1="355.4" x2="409.9" y2="423.3" stroke="rgba(43,36,32,0.14)" stroke-width="2" stroke-dasharray="9 7"/><line x1="111.7" y1="394.9" x2="176.8" y2="558.2" stroke="rgba(43,36,32,0.14)" stroke-width="2" stroke-dasharray="9 7"/><line x1="387.6" y1="154.0" x2="445.8" y2="82.2" stroke="rgba(43,36,32,0.14)" stroke-width="2" stroke-dasharray="9 7"/><line x1="337.0" y1="302.2" x2="347.7" y2="82.8" stroke="rgba(43,36,32,0.14)" stroke-width="2" stroke-dasharray="9 7"/><line x1="568.2" y1="211.4" x2="466.9" y2="291.3" stroke="rgba(43,36,32,0.14)" stroke-width="2" stroke-dasharray="9 7"/><line x1="385.9" y1="462.3" x2="508.5" y2="375.6" stroke="rgba(43,36,32,0.14)" stroke-width="2" stroke-dasharray="9 7"/>
+  <rect x="0" y="0" width="640" height="480" fill="none" stroke="#b62924" stroke-width="6" opacity="0.9"/>
+  <line x1="40" y1="420" x2="130" y2="420" stroke="#b62924" stroke-width="3"/>
+  <text x="40" y="220" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="2" fill="#2b2420">IMAGEN</text>
+  <text x="40" y="256" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="2" fill="#2b2420">PLACEHOLDER</text>
+  <text x="40" y="300" font-family="Arial, sans-serif" font-size="16" letter-spacing="1" fill="#b62924">IMPRESIÓN 3D</text>
+  <text x="40" y="326" font-family="Arial, sans-serif" font-size="13" fill="rgba(43,36,32,0.6)">Prototipo funcional</text>
+</svg>

@@ -1,0 +1,49 @@
+<div
+  class="carousel"
+  role="region"
+  aria-roledescription="carrusel"
+  (mouseenter)="onMouseEnter()"
+  (mouseleave)="onMouseLeave()"
+>
+  <div class="carousel__viewport">
+    @for (image of images; track image.src; let i = $index) {
+      <img
+        class="carousel__slide"
+        [class.is-active]="i === activeIndex"
+        [src]="image.src"
+        [alt]="image.alt"
+      />
+    }
+  </div>
+
+  @if (images.length > 1) {
+    <button
+      class="carousel__nav carousel__nav--prev"
+      type="button"
+      aria-label="Imagen anterior"
+      (click)="onPrevClick()"
+    >
+      ‹
+    </button>
+    <button
+      class="carousel__nav carousel__nav--next"
+      type="button"
+      aria-label="Imagen siguiente"
+      (click)="onNextClick()"
+    >
+      ›
+    </button>
+
+    <div class="carousel__dots">
+      @for (image of images; track image.src; let i = $index) {
+        <button
+          class="carousel__dot"
+          type="button"
+          [class.is-active]="i === activeIndex"
+          [attr.aria-label]="'Ir a la imagen ' + (i + 1)"
+          (click)="goTo(i)"
+        ></button>
+      }
+    </div>
+  }
+</div>

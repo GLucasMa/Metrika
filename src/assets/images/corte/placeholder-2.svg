@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480" role="img" aria-label="Corte y grabado">
+  <rect width="640" height="480" fill="#2b2420"/>
+  <line x1="186.3" y1="183.0" x2="226.3" y2="254.6" stroke="rgba(248,240,238,0.12)" stroke-width="2" stroke-dasharray="9 7"/><line x1="455.7" y1="91.2" x2="338.0" y2="37.5" stroke="rgba(248,240,238,0.12)" stroke-width="2" stroke-dasharray="9 7"/><line x1="366.8" y1="240.4" x2="333.1" y2="126.7" stroke="rgba(248,240,238,0.12)" stroke-width="2" stroke-dasharray="9 7"/><line x1="504.5" y1="251.3" x2="453.1" y2="37.5" stroke="rgba(248,240,238,0.12)" stroke-width="2" stroke-dasharray="9 7"/><line x1="291.9" y1="420.3" x2="143.1" y2="337.4" stroke="rgba(248,240,238,0.12)" stroke-width="2" stroke-dasharray="9 7"/><line x1="479.7" y1="65.8" x2="586.9" y2="91.7" stroke="rgba(248,240,238,0.12)" stroke-width="2" stroke-dasharray="9 7"/>
+  <rect x="0" y="0" width="640" height="480" fill="none" stroke="#b62924" stroke-width="6" opacity="0.9"/>
+  <line x1="40" y1="420" x2="130" y2="420" stroke="#b62924" stroke-width="3"/>
+  <text x="40" y="220" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="2" fill="#f8f0ee">IMAGEN</text>
+  <text x="40" y="256" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="2" fill="#f8f0ee">PLACEHOLDER</text>
+  <text x="40" y="300" font-family="Arial, sans-serif" font-size="16" letter-spacing="1" fill="#b62924">CORTE Y GRABADO</text>
+  <text x="40" y="326" font-family="Arial, sans-serif" font-size="13" fill="rgba(248,240,238,0.6)">Grabado láser sobre madera</text>
+</svg>

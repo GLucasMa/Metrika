@@ -1,0 +1,88 @@
+<header class="navbar">
+  <div class="navbar__bar container">
+    <a class="navbar__brand" href="#top" (click)="closeMenu()">
+      Metrika
+      <span class="navbar__brand-sub">Láser &amp; 3D</span>
+    </a>
+
+    <button
+      class="navbar__burger"
+      type="button"
+      [class.is-open]="isMenuOpen"
+      aria-label="Abrir menú"
+      [attr.aria-expanded]="isMenuOpen"
+      (click)="toggleMenu()"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navbar__links" [class.is-open]="isMenuOpen">
+      @for (link of navLinks; track link.target) {
+        <a [href]="'#' + link.target" (click)="closeMenu()">{{ link.label }}</a>
+      }
+
+      <div class="navbar__contact" (click)="$event.stopPropagation()">
+        <button
+          class="navbar__contact-toggle"
+          type="button"
+          [attr.aria-expanded]="isContactOpen"
+          (click)="toggleContact($event)"
+        >
+          Contacto
+          <span class="navbar__caret" [class.is-open]="isContactOpen">▾</span>
+        </button>
+
+        @if (isContactOpen) {
+          <div class="navbar__contact-panel">
+            <a class="navbar__contact-phone" [href]="'tel:' + contactPhone">
+              📞 {{ contactPhone }}
+            </a>
+
+            <div class="navbar__socials">
+              @for (social of socialLinks; track social.label) {
+                <a
+                  class="navbar__social"
+                  [href]="social.href"
+                  [attr.aria-label]="social.label"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  @switch (social.icon) {
+                    @case ('instagram') {
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <rect x="3" y="3" width="18" height="18" rx="5" />
+                        <circle cx="12" cy="12" r="4" />
+                        <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none" />
+                      </svg>
+                    }
+                    @case ('whatsapp') {
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                          d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2Zm0 18.2a8.1 8.1 0 0 1-4.2-1.2l-.3-.2-2.8.8.8-2.7-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-1.3-.6-2.2-1.4-2.9-2.6-.1-.2 0-.4.1-.5.2-.2.4-.5.6-.7.1-.2.1-.4 0-.6-.1-.2-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.4-.3Z"
+                        />
+                      </svg>
+                    }
+                    @case ('facebook') {
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                          d="M13.5 21v-7.2h2.4l.4-2.8h-2.8V9.1c0-.8.2-1.3 1.4-1.3h1.5V5.3C15.9 5.2 15 5.1 14 5.1c-2.1 0-3.6 1.3-3.6 3.6V11H8v2.8h2.4V21h3.1Z"
+                        />
+                      </svg>
+                    }
+                    @default {
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="9" />
+                      </svg>
+                    }
+                  }
+                </a>
+              }
+            </div>
+          </div>
+        }
+      </div>
+    </nav>
+  </div>
+</header>

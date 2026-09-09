@@ -1,0 +1,29 @@
+<section id="faq" class="section">
+  <div class="container faq-container">
+    <span class="section-kicker">Ayuda</span>
+    <h2 class="section-title">Preguntas frecuentes</h2>
+    <div class="cut-divider"></div>
+
+    <div class="faq-list">
+      @for (item of items; track item.question; let i = $index) {
+        <div class="faq-item" [class.is-open]="openIndex === i">
+          <button
+            class="faq-item__question"
+            type="button"
+            [attr.aria-expanded]="openIndex === i"
+            (click)="toggle(i)"
+          >
+            <span>{{ item.question }}</span>
+            <span class="faq-item__icon">{{ openIndex === i ? '−' : '+' }}</span>
+          </button>
+
+          @if (openIndex === i) {
+            <div class="faq-item__answer">
+              <p>{{ item.answer }}</p>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</section>
